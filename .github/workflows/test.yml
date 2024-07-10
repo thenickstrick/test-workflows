@@ -8,11 +8,11 @@ on:
 jobs:
   call-reusable-workflow:
     uses: thenickstrick/reusable-workflows/.github/workflows/matrix.yml@main
-    # with:
-      # this is turning out to be a little fun
-      # matrix_flavor: '["staging", "production"]'
-      # matrix_type: '["matrix-qa", "matrix-prod"]'
-      # node_version: '14.17.0'
-      # use_workload_identity: false
-      # workload_identity_pool: 'custom-workload-identity-pool'
-      # workload_sa_email: 'custom-gcp@serviceaccount.com'
+    with:
+      this is turning out to be a little fun
+      matrix_flavor: '["staging", "production"]'
+      matrix_type: '["matrix-qa", "matrix-prod"]'
+      node_version: '14.17.0'
+      use_workload_identity: false
+      workload_identity_pool: 'custom-workload-identity-pool'
+      workload_sa_email: 'custom-gcp@serviceaccount.com'
